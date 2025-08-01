@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectRootManager">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="com.github.texhnolyzze.jiraworklogplugin.JiraWorklogPluginState">
+    <option name="lastBranch" value="master" />
+    <option name="timers" value="{&quot;master&quot;:{&quot;total&quot;:4575727400,&quot;updatedAtSinceEpoch&quot;:1754042275.531842100,&quot;paused&quot;:false}}" />
+  </component>
+</project>

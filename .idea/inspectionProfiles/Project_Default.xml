@@ -1,0 +1,145 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="CustomRegExpInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myConfigurations">
+        <list>
+          <RegExpInspectionConfiguration>
+            <option name="description" value="https://assertj.github.io/doc/#assertj-core-soft-assertions" />
+            <option name="name" value="SoftAssert for three or more consecutive assertThat statements" />
+            <option name="uuid" value="a5738e98-571f-34d6-900c-f4a19d8a5a0c" />
+            <option name="patterns">
+              <list>
+                <InspectionPattern>
+                  <option name="regExp" value="assertThat.*;&#10;assertThat.*;&#10;assertThat.*;&#10;assertThat.*;&#10;assertThat.*;" />
+                  <option name="_fileType" value="JAVA" />
+                  <option name="searchContext" value="ANY" />
+                  <option name="replacement" value="softly.assertThat.*;&#10;softly.assertThat.*;&#10;softly.assertThat.*;&#10;softly.assertThat.*;&#10;softly.assertThat.*;" />
+                </InspectionPattern>
+                <InspectionPattern>
+                  <option name="regExp" value="assertThat.*;&#10;assertThat.*;&#10;assertThat.*;&#10;assertThat.*;" />
+                  <option name="_fileType" value="JAVA" />
+                  <option name="searchContext" value="ANY" />
+                  <option name="replacement" value="softly.assertThat.*;&#10;softly.assertThat.*;&#10;softly.assertThat.*;&#10;softly.assertThat.*;" />
+                </InspectionPattern>
+                <InspectionPattern>
+                  <option name="regExp" value="assertThat.*;&#10;assertThat.*;&#10;assertThat.*;" />
+                  <option name="_fileType" value="JAVA" />
+                  <option name="searchContext" value="ANY" />
+                  <option name="replacement" value="softly.assertThat.*;&#10;softly.assertThat.*;&#10;softly.assertThat.*;" />
+                </InspectionPattern>
+              </list>
+            </option>
+          </RegExpInspectionConfiguration>
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="Deprecation" enabled="true" level="WEAK WARNING" enabled_by_default="true" editorAttributes="INFO_ATTRIBUTES">
+      <scope name="Production" level="WARNING" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="FieldCanBeLocal" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="FieldMayBeFinal" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="GrazieInspection" enabled="false" level="TYPO" enabled_by_default="false" />
+    <inspection_tool class="HttpUrlsUsage" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredUrls">
+        <list>
+          <option value="http://0.0.0.0" />
+          <option value="http://127.0.0.1" />
+          <option value="http://activemq.apache.org/schema/" />
+          <option value="http://cxf.apache.org/schemas/" />
+          <option value="http://java.sun.com/" />
+          <option value="http://javafx.com/fxml" />
+          <option value="http://javafx.com/javafx/" />
+          <option value="http://json-schema.org/draft" />
+          <option value="http://localhost" />
+          <option value="http://maven.apache.org" />
+          <option value="http://maven.apache.org/POM/" />
+          <option value="http://maven.apache.org/xsd/" />
+          <option value="http://nexus-vas.openshift.scloud.be" />
+          <option value="http://primefaces.org/ui" />
+          <option value="http://schema.cloudfoundry.org/spring/" />
+          <option value="http://schemas.xmlsoap.org/" />
+          <option value="http://tiles.apache.org/" />
+          <option value="http://www.ibm.com/webservices/xsd" />
+          <option value="http://www.jboss.com/xml/ns/" />
+          <option value="http://www.jboss.org/j2ee/schema/" />
+          <option value="http://www.springframework.org/schema/" />
+          <option value="http://www.springframework.org/security/tags" />
+          <option value="http://www.springframework.org/tags" />
+          <option value="http://www.thymeleaf.org" />
+          <option value="http://www.w3.org/" />
+          <option value="http://xmlns.jcp.org/" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="IncorrectHttpHeaderInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="customHeaders">
+        <set>
+          <option value="RelatedTo" />
+          <option value="RelatesTo" />
+        </set>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="LoggingSimilarMessage" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="LombokGetterMayBeUsed" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="LombokSetterMayBeUsed" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="NewClassNamingConvention" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="NullableProblems" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="REPORT_NULLABLE_METHOD_OVERRIDES_NOTNULL" value="true" />
+      <option name="REPORT_NOT_ANNOTATED_METHOD_OVERRIDES_NOTNULL" value="true" />
+      <option name="REPORT_NOTNULL_PARAMETER_OVERRIDES_NULLABLE" value="true" />
+      <option name="REPORT_NOT_ANNOTATED_PARAMETER_OVERRIDES_NOTNULL" value="true" />
+      <option name="REPORT_NOT_ANNOTATED_GETTER" value="true" />
+      <option name="REPORT_NOT_ANNOTATED_SETTER_PARAMETER" value="true" />
+      <option name="REPORT_ANNOTATION_NOT_PROPAGATED_TO_OVERRIDERS" value="true" />
+      <option name="REPORT_NULLS_PASSED_TO_NON_ANNOTATED_METHOD" value="true" />
+    </inspection_tool>
+    <inspection_tool class="OptionalGetWithoutIsPresent" enabled="true" level="WEAK WARNING" enabled_by_default="true" editorAttributes="INFO_ATTRIBUTES">
+      <scope name="Production" level="WARNING" enabled="true" />
+    </inspection_tool>
+    <inspection_tool class="SSBasedInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <replaceConfiguration name="Refactor to assertJ" uuid="7476a608-9ec3-3edf-9866-ae141b1bbec2" problemDescriptor="Because assertJ is just better." text="org.junit.jupiter.api.Assertions.assertEquals($expected$, $actual$);" recursive="false" caseInsensitive="false" type="JAVA" pattern_context="default" reformatAccordingToStyle="true" shortenFQN="true" useStaticImport="true" replacement="Assertions.assertThat($actual$).isEqualTo($expected$);">
+        <constraint name="__context__" within="" contains="" />
+        <constraint name="expected" within="" contains="" />
+        <constraint name="actual" within="" contains="" />
+      </replaceConfiguration>
+      <replaceConfiguration name="Refactor to assertJ" uuid="7476a608-9ec3-3edf-9866-ae141b1bbec2" text="org.junit.jupiter.api.Assertions.assertEquals($expected$, $actual$);" recursive="false" caseInsensitive="false" type="JAVA" pattern_context="default" reformatAccordingToStyle="false" shortenFQN="true" useStaticImport="true" replacement="org.assertj.core.api.Assertions.assertThat($actual$).isEqualTo($expected$);">
+        <constraint name="__context__" within="" contains="" />
+        <constraint name="expected" within="" contains="" />
+        <constraint name="actual" within="" contains="" />
+        <variableDefinition name="actual" />
+      </replaceConfiguration>
+      <replaceConfiguration name="Refactor to assertJ" uuid="7476a608-9ec3-3edf-9866-ae141b1bbec2" text="org.junit.jupiter.api.Assertions.assertFalse($expression$);&#10;" recursive="false" caseInsensitive="false" type="JAVA" pattern_context="default" reformatAccordingToStyle="true" shortenFQN="true" useStaticImport="true" replacement="Assertions.assertThat($expression$).isFalse();">
+        <constraint name="__context__" within="" contains="" />
+        <constraint name="expression" within="" contains="" />
+      </replaceConfiguration>
+      <replaceConfiguration name="Refactor to assertJ" uuid="7476a608-9ec3-3edf-9866-ae141b1bbec2" text="org.junit.jupiter.api.Assertions.assertNotNull($expression$);&#10;" recursive="false" caseInsensitive="false" type="JAVA" pattern_context="default" reformatAccordingToStyle="true" shortenFQN="true" useStaticImport="true" replacement="Assertions.assertThat($expression$).isNotNull();">
+        <constraint name="__context__" within="" contains="" />
+        <constraint name="expression" within="" contains="" />
+      </replaceConfiguration>
+      <replaceConfiguration name="Refactor to assertJ" uuid="7476a608-9ec3-3edf-9866-ae141b1bbec2" text="org.junit.jupiter.api.Assertions.assertThat($expression$, org.hamcrest.Matchers.hasSize($size$));&#10;" recursive="false" caseInsensitive="false" type="JAVA" pattern_context="default" reformatAccordingToStyle="true" shortenFQN="true" useStaticImport="true" replacement="Assertions.assertThat($expression$).hasSize($size$);">
+        <constraint name="__context__" within="" contains="" />
+        <constraint name="expression" within="" contains="" />
+        <constraint name="size" within="" contains="" />
+      </replaceConfiguration>
+      <replaceConfiguration name="Refactor to assertJ" uuid="7476a608-9ec3-3edf-9866-ae141b1bbec2" text="assertThat($collection$.isEmpty()).isFalse();" recursive="false" caseInsensitive="false" type="JAVA" pattern_context="default" reformatAccordingToStyle="true" shortenFQN="true" useStaticImport="true" replacement="assertThat($collection$).isNotEmpty();">
+        <constraint name="__context__" within="" contains="" />
+        <constraint name="collection" within="" contains="" />
+      </replaceConfiguration>
+      <replaceConfiguration name="Refactor to assertJ" uuid="7476a608-9ec3-3edf-9866-ae141b1bbec2" text="assertThat($collection$.size()).isEqualTo($size$);" recursive="false" caseInsensitive="false" type="JAVA" pattern_context="default" reformatAccordingToStyle="true" shortenFQN="true" useStaticImport="true" replacement="assertThat($collection$).hasSize($size$);">
+        <constraint name="__context__" within="" contains="" />
+        <constraint name="collection" within="" contains="" />
+        <constraint name="size" within="" contains="" />
+      </replaceConfiguration>
+    </inspection_tool>
+    <inspection_tool class="SequencedCollectionMethodCanBeUsed" enabled="true" level="WEAK WARNING" enabled_by_default="true" editorAttributes="INFO_ATTRIBUTES">
+      <scope name="Production" level="WARNING" enabled="true" editorAttributes="WARNING_ATTRIBUTES" />
+    </inspection_tool>
+    <inspection_tool class="SpringJavaAutowiredFieldsWarningInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="SqlResolveInspection" enabled="true" level="INFORMATION" enabled_by_default="true" />
+    <inspection_tool class="UnusedReturnValue" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="a5738e98-571f-34d6-900c-f4a19d8a5a0c" enabled="true" level="INFORMATION" enabled_by_default="false" editorAttributes="INFORMATION_ATTRIBUTES">
+      <scope name="Tests" level="WEAK WARNING" enabled="true" editorAttributes="INFO_ATTRIBUTES" />
+    </inspection_tool>
+  </profile>
+</component>
