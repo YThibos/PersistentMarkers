@@ -67,4 +67,14 @@ if (_loadedCount > 0) then {
     diag_log "Persistent Markers ACE: No markers were loaded";
 };
 
+// Log the load operation
+diag_log format ["Persistent Markers ACE: Successfully loaded %1 markers", _loadedCount];
+
+// Notify player if in multiplayer
+if (hasInterface && _loadedCount > 0) then {
+    systemChat format ["Persistent Markers ACE: Restored %1 saved markers", _loadedCount];
+} else if (hasInterface) then {
+    systemChat "Persistent Markers ACE: No markers to restore";
+};
+
 true

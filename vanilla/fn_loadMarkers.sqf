@@ -55,5 +55,12 @@ private _loadedCount = 0;
 // Log the load operation
 diag_log format ["Persistent Markers: Loaded %1 out of %2 saved markers", _loadedCount, count _markerData];
 
+// Notify player about marker restoration
+if (_loadedCount > 0) then {
+    systemChat format ["Persistent Markers: Restored %1 saved markers", _loadedCount];
+} else {
+    systemChat "Persistent Markers: No markers to restore";
+};
+
 // Return success
 true

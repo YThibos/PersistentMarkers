@@ -38,4 +38,8 @@ private _action = ["saveMarkers", "Save Map Markers", "", {
 // Set initialization flag
 PersistentMarkers_ACE_Initialized = true;
 
+// Notify player that the mod has loaded
+if (hasInterface) then {
+    systemChat "Persistent Markers ACE: Mod loaded and ready";
+};
 diag_log "Persistent Markers ACE: System initialized with ACE integration";

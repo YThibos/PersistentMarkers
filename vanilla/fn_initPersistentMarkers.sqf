@@ -30,4 +30,6 @@ addMissionEventHandler ["Ended", {
 // Set initialization flag
 PersistentMarkers_Initialized = true;
 
+// Notify player that the mod has loaded
+systemChat "Persistent Markers: Mod loaded and ready";
 diag_log "Persistent Markers: System initialized";
